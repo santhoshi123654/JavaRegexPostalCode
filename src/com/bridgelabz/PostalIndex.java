@@ -7,9 +7,10 @@ public class PostalIndex {
 	
 	public static void main(String[] args) {
 		
-		String pattern = "^[1-9]{1}[0-9]{5}]$";
-		String Pincode = "400088B";
+		String pattern = "^[1-9]{1}[0-9]{2}(\\s)?[0-9]{3}$";
+		String Pincode = "400 888";
 		System.out.println(Pattern.matches(pattern, Pincode));
-		System.out.println("The last character is Alphabet");
+		String pincode2 = "500068";
+		System.out.println(Pattern.matches(pattern, pincode2));
 	}
 }
